@@ -1,0 +1,17 @@
+.add-inventory {
+    padding: 20px;
+}
+
+.add-inventory input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.add-inventory button {
+    padding: 10px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

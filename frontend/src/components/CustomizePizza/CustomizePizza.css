@@ -1,0 +1,125 @@
+.customize-pizza-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #c7a211;
+    padding: 30px;
+    width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    font-family: 'Arial', sans-serif;
+}
+
+.customize-pizza-modal h2 {
+    margin-bottom: 20px;
+    color: #920f0f;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.customize-pizza-modal h3 {
+    margin: 20px 0 10px;
+    color: #732906;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.customize-pizza-modal div {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+    gap: 20px;/* Increased space between radio/checkbox options */
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Space between button and text */
+    background: #961717;
+    padding: 12px 18px; /* Increased padding for better spacing */
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    min-width: 120px; /* Ensures consistent spacing */
+}
+
+.radio-group label:hover,
+.checkbox-group label:hover {
+    background: #ece6e6;
+}
+
+/* Increase spacing between radio/checkbox button and its text */
+.customize-pizza-modal input[type="radio"],
+.customize-pizza-modal input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+    margin-right: 12px; /* More spacing between button and text */
+}
+
+/* Optional: Make text stand out more */
+.radio-group label span,
+.checkbox-group label span {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+
+
+
+
+.customize-pizza-modal select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #f6e5e5;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Added extra spacing between the last selection option and buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /* Increased margin for better separation */
+}
+
+.customize-pizza-modal button {
+    width: 48%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.customize-pizza-modal button:first-of-type {
+    background: #28a745;
+    color: white;
+}
+
+.customize-pizza-modal button:first-of-type:hover {
+    background: #218838;
+}
+
+.customize-pizza-modal button:last-of-type {
+    background: #dc3545;
+    color: white;
+}
+
+.customize-pizza-modal button:last-of-type:hover {
+    background: #c82333;
+}

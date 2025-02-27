@@ -1,0 +1,96 @@
+.list-inventory {
+    padding: 20px;
+    background-color: transparent; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%; 
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    margin: 20px auto; /* Center the component with margin */
+}
+
+.list-inventory h3 {
+    margin-bottom: 20px;
+    font-size: 24px; /* Increased font size for better readability */
+    color: #333; /* Darker color for better contrast */
+    text-align: center; /* Center the title */
+}
+
+.list-table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse;
+}
+
+.list-table-format {
+    display: flex; /* Use flexbox for better alignment */
+    justify-content: space-between; /* Space out items evenly */
+    padding: 15px; /* Increased padding for better touch targets */
+    border-bottom: 1px solid #e0e0e0; /* Subtle border for separation */
+}
+
+.list-table-format.title {
+    font-weight: bold;
+    background-color: #f39a0c; /* Light background for header */
+    color: #555; /* Darker text for header */
+}
+
+.list-table-format p {
+    margin: 0; /* Remove default margin */
+    flex: 1; /* Allow items to grow and fill space */
+    text-align: left; /* Align text to the left */
+}
+
+.list-table-format p:last-child {
+    text-align: center; /* Center align the action buttons */
+    color: #007bff; /* Change color for action text */
+    cursor: pointer; /* Indicate clickable action */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.list-table-format p:last-child:hover {
+    color: #0056b3; /* Darker color on hover */
+    text-decoration: underline; /* Underline on hover for better indication */
+}
+
+.list-table-format:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+
+/* Add this to your ListInventory.css */
+
+.list-table-format p:last-child {
+    text-align: center; /* Center align the action buttons */
+    color: #007bff; /* Change color for action text */
+    cursor: pointer; /* Indicate clickable action */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Style for action buttons */
+.action-button {
+    margin: 0 5px; /* Add horizontal space between buttons */
+    padding: 5px 10px; /* Add padding for better touch targets */
+    border: 1px solid #007bff; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #ffffff; /* White background */
+    color: #007bff; /* Button text color */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for action buttons */
+.action-button:hover {
+    background-color: #007bff; /* Change background on hover */
+    color: #ffffff; /* Change text color on hover */
+}
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+    .list-table-format {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .list-table-format p {
+        width: 100%; /* Full width for each item */
+        text-align: left; /* Align text to the left */
+    }
+}
